@@ -1,1 +1,35 @@
-notepad
+Homework 1
+
+What is version control tool?
+Ans-  A component of software configuration management used to manage or make changes to documents, programs, large web sites, and other collections of information. Version control tools are essential for the organization of multi-developer projects. Version control tools are used to revert a document to a previous version, which is critical for allowing editors to track each other's edits, correct mistakes, and defend against vandalism and spamming.
+
+What is a repository?
+Ans- A repository is a set of files, as well as the history of changes made to those files.[2] Exactly how each version control system handles storing those changes. Database instance are moved or stored directly on the file system. A repository is an on-disk data structure which stores data as a set of files.
+
+Why do we need to use repository in software development?
+Ans- A repository is a storage location from which software packages may be retrieved and installed on a computer. software publishers and other organizations maintain servers on the Internet for this purpose, either free of charge or for a subscription fee.  Repositories typically provide a package management system, tools intended to search for, install and otherwise manipulate software packages from the repositories.
+
+
+What is GIT?
+Ans- GIT is a version control system for tracking changes in computer files and coordinating work on those files among multiple users.It is used to keep track of changes made in any files. GIT supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history.
+
+
+What is github?
+Ans- Github is a web-based Git repository hosting service. It offers distributed version control on functionality of Git as well as adding its own features. Projects on GitHub can be accessed and manipulated using the standard Git command-line interface and all of the standard Git commands work with it. GitHub also allows registered and non-registered users to browse public repositories on the site. Public repositories can be browsed and downloaded by anyone.
+
+
+Differences between git and github?
+Ans- Git is a system for version control used by programmers to write code. It runs with the command line on the system. Allows to keep track of your files and modifications made to those files which are stored in a repository.
+Github is a website which allows you to upload your repositories. It provides a backup of the files. It gives a visual interface for navigation of your repository. It makes repository collaboration easy.
+
+
+
+
+What is pull, push, commit in git?
+Ans- pull command is used to download a file from the repository after any changes are made to the file.
+Push command is used to upload the file into the repository after the user has made changes to the file.
+Commit command is used to adds the changes to the source code to the repository and makes the changes part of the head revision of the repository.
+
+
+What are merge conflicts?
+Ans- Merge conflict is the collision when two different users have made changes to the same part of code. It can be resolved manually.
