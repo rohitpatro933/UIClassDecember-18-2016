@@ -1,1 +1,43 @@
-notepad
+Home work 2
+Clone- Clone command is used to Make a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions.
+
+Init- creates the initial ‘.git’ directory in a new or in an existing project.
+
+Add- Adds files changes in your working directory to your index.
+
+mv- this command is used to move or rename a file.
+
+Reset- Resets your index and working directory to the state of your last commit.
+
+Rm- Removes files from your index and your working directory so they will not be tracked.
+
+Bisect- This command uses a binary search algorithm to find which commit in your project’s history introduced a bug.
+
+Grep- Looks for specified patterns in the tracked files in the work tree, binary large objects registered in the index file, or blobs in given tree object.
+
+Log- Shows a listing of commits on a branch including the corresponding details.
+
+Show- Shows one or more objects. For commits it shows the log message and textual diff. It also presents the merge commit in a special format.
+
+status - Shows the working tree status. Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked by Git.
+
+branch - List, create, or delete branches. If a list is given, or if there are no non-option arguments, existing branches are listed; the current branch will be highlighted with an asterisk. Option -r causes the remote-tracking branches to be listed, and option -a shows both local and remote branches. If a pattern is given, it is used as a shell wildcard to restrict the output to matching branches. If multiple patterns are given, a branch is shown if it matches any of the patterns. Note that when providing a pattern, you must use the list; otherwise the command is interpreted as branch creation.
+
+Checkout- Checks out a different branch – switches branches by updating the index, working tree, and HEAD to reflect the chosen branch.
+
+commit
+Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch to point to that new commit. Stores the current contents of the index in a new commit along with a log message from the user describing the changes.
+
+Diff- Shows changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on disk.
+
+merge - Join two or more development histories together. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
+
+rebase - Reapply commits on top of another base tip. Rebase will perform an automatic git checkout branch before doing anything else. Otherwise it remains on the current branch.
+
+Tag- Tags a specific commit with a simple, human readable handle that never moves.
+
+Fetch- Fetches all the objects from the remote repository that are not present in the local one. Fetch can fetch from either a single named repository or URL, or from several repositories at once if group is given and there is a remotes.
+
+pull - Fetch from and integrate with another repository or a local branch.  pull will fetch and replay the changes from the remote master branch since it diverged from the local master until its current commit (C) on top of master and record the result in a new commit along with the names of the two parent commits and a log message from the user describing the changes.
+
+push - Update remote refs along with associated objects. Updates remote refs using local refs, while sending objects necessary to complete the given refs.
