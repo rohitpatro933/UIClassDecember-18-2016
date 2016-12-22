@@ -18,7 +18,7 @@ Steps to create html document :-
 4.	In the file name box, type the file name that you want for your document, and then click save.
 
 What is doctype?
-Ans- html is responsible for telling a web browser how text and other objects in a web page should appear. As per html standards, each html document requires a document type declaration (dtd). Doctype is a declaration and always appears at the very top of your documents. If it is omitted, web browsers tend to use a different rendering mode that is incompatible with some specifications.
+Ans- DOCTYPE is responsible for telling a web browser how text and other objects in a web page should appear. As per html standards, each html document requires a document type declaration (dtd). Doctype is a declaration and always appears at the very top of your documents. If it is omitted, web browsers tend to use a different rendering mode that is incompatible with some specifications.
 
 What is a tag and element in html?
 Ans- html element is an individual component of an html document or web page, once this has been parsed into the document object model. Html documents contain tags, but do not contain the elements. The elements are only generated after the parsing step, from these tags.
@@ -31,9 +31,7 @@ Create a simple html page?
 <!Doctype html>
 <html>
     <head>
-        <title>rohit html</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rohit</title>
     </head>
     <body>
         <div>hi everyone..!!</div>
