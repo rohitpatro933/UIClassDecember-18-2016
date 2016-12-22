@@ -1,35 +1,41 @@
-Homework 1
+Homework 3
 
-What is version control tool?
-Ans-  A component of software configuration management used to manage or make changes to documents, programs, large web sites, and other collections of information. Version control tools are essential for the organization of multi-developer projects. Version control tools are used to revert a document to a previous version, which is critical for allowing editors to track each other's edits, correct mistakes, and defend against vandalism and spamming.
+How to resolve merge conflicts?
+Ans- 1. Open git.
+2. Navigate into the local git repository that has the merge conflict. 
+3. Generate a list of the files affected by the merge conflict. Open your text editor and navigate to the file that has merge conflicts.
+4. To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the head or base branch after the line <<<<<<< head. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> branch-name. 
+5. Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge. 
+6. Add or stage your changes.
+7. Commit your changes with a comment. 
 
-What is a repository?
-Ans- A repository is a set of files, as well as the history of changes made to those files.[2] Exactly how each version control system handles storing those changes. Database instance are moved or stored directly on the file system. A repository is an on-disk data structure which stores data as a set of files.
+What is html? How to create a html document?
+Ans-  hypertext markup language (html) is the standard markup language for creating web pages and web applications. Html elements are the building blocks of html pages. Web browsers receive html documents from a webserver or from local storage and render them into multimedia web pages. Html can embed programs written in a scripting language such as javascript which affect the behavior and content of web pages.
+Steps to create html document :-
+1.	Start microsoft word.
+2.	Create a new blank document.
+3.	On the file menu, click save as web page.
+4.	In the file name box, type the file name that you want for your document, and then click save.
 
-Why do we need to use repository in software development?
-Ans- A repository is a storage location from which software packages may be retrieved and installed on a computer. software publishers and other organizations maintain servers on the Internet for this purpose, either free of charge or for a subscription fee.  Repositories typically provide a package management system, tools intended to search for, install and otherwise manipulate software packages from the repositories.
+What is doctype?
+Ans- html is responsible for telling a web browser how text and other objects in a web page should appear. As per html standards, each html document requires a document type declaration (dtd). Doctype is a declaration and always appears at the very top of your documents. If it is omitted, web browsers tend to use a different rendering mode that is incompatible with some specifications.
 
+What is a tag and element in html?
+Ans- html element is an individual component of an html document or web page, once this has been parsed into the document object model. Html documents contain tags, but do not contain the elements. The elements are only generated after the parsing step, from these tags.
+As is generally understood, the position of an element is indicated as spanning from a start tag, possibly including some child content, and is terminated by an end tag.this is the case for many, but not all, elements within an html document.
 
-What is GIT?
-Ans- GIT is a version control system for tracking changes in computer files and coordinating work on those files among multiple users.It is used to keep track of changes made in any files. GIT supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history.
+What is an attribute in html?
+Html attribute is a modifier of an html element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. Html attributes generally appear as name-value pairs, separated by =, and are written within the start tag of an element, after the element's name. Where tag names the html element type, and attribute is the name of the attribute, set to the provided value. The value may be enclosed in single or double quotes, although values consisting of certain characters can be left unquoted in html.
 
-
-What is github?
-Ans- Github is a web-based Git repository hosting service. It offers distributed version control on functionality of Git as well as adding its own features. Projects on GitHub can be accessed and manipulated using the standard Git command-line interface and all of the standard Git commands work with it. GitHub also allows registered and non-registered users to browse public repositories on the site. Public repositories can be browsed and downloaded by anyone.
-
-
-Differences between git and github?
-Ans- Git is a system for version control used by programmers to write code. It runs with the command line on the system. Allows to keep track of your files and modifications made to those files which are stored in a repository.
-Github is a website which allows you to upload your repositories. It provides a backup of the files. It gives a visual interface for navigation of your repository. It makes repository collaboration easy.
-
-
-
-
-What is pull, push, commit in git?
-Ans- pull command is used to download a file from the repository after any changes are made to the file.
-Push command is used to upload the file into the repository after the user has made changes to the file.
-Commit command is used to adds the changes to the source code to the repository and makes the changes part of the head revision of the repository.
-
-
-What are merge conflicts?
-Ans- Merge conflict is the collision when two different users have made changes to the same part of code. It can be resolved manually.
+Create a simple html page?
+<!Doctype html>
+<html>
+    <head>
+        <title>rohit html</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>hi everyone..!!</div>
+    </body>
+</html>
