@@ -1,0 +1,80 @@
+Homework 4
+
+how to create a list in html? orderlists and un orderlists.
+Ans- An unordered list is simply a list of related items whose order does not matter. Creating an unordered list in HTML is accomplished using the unordered list block-level element, <ul>. Each item within an unordered list is individually marked up using the list item element, <li>.
+<ul>
+  <li>Orange</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+The ordered list element, <ol>, works very much like the unordered list element; individual list items are created in the same manner. The main difference between an ordered list and an unordered list is that with an ordered list, the order in which items are presented is important.
+<ol>
+  <li>Head north on N Halsted St</li>
+  <li>Turn right on W Diversey Pkwy</li>
+  <li>Turn left on N Orchard St</li>
+</ol>
+
+
+how to include images in html?
+Ans- 
+<IMG SRC="image.gif" ALT="some text" WIDTH=32 HEIGHT=32>
+IMGstands for "image." It announces to the browser that an image will go here on the page. Yes, the image will pop up right where you write in the image tag.
+SRC stands for "source." This again is an attribute, a command inside a command. It's telling the browser where to go to find the image. Again, it's best for you to place the images you want to use in a subdirectory called "images".
+ALTstands for "alternate text". This tells the browser that if it can't find the image, then just display this text. It also tells anyone who can't view your image what the image is about.
+WIDTHstands for just that, the width of the image in pixels. It can range from 1 pixel to, well, just about any number, but generally will be less than the width of the web browser.
+HEIGHT stands for, as you might guess, the height of the image in pixels. Again, the height can be just about anything, but generally will be less than the height of the web browser.
+
+how to take user input in html?
+Ans-  The HTML <form> element defines a form that is used to collect user input. User input can be taken in many other ways aswell.
+The <input> element is the most important form element.
+Example- <form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+how to have links to different web pages and link to differnt part of same webpage?
+Ans-  Links allow users to click their way from page to page.
+HTML links are hyperlinks. When you move the mouse over a link, the mouse arrow will turn into a little hand.
+Syntax that links to different web pages
+<a href="url">link text</a>
+Syntax that link to different part of same webpage
+<a href="url#id ">bookmark text</a>
+
+what is head, body, html element and why do we need them in the page?
+Ans- The <html> tag tells the browser that this is an HTML document.
+The <html> tag represents the root of an HTML document.
+The <head> element is a container for all the head elements.
+The <head> element can include a title for the document, scripts, styles, meta information, and more.
+The <body> tag defines the document's body.
+The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<body>
+The content of the document......
+</body>
+</html>
+
+what are semantic element, describe about each one of them?
+Ans- A semantic element clearly describes its meaning to both the browser and the developer.
+semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+Types of semantic elements:
+
+The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+The <aside> tag defines some content aside from the content it is placed in. The aside content should be related to the surrounding content.
+The <details> tag specifies additional details that the user can view or hide on demand. The <details> tag can be used to create an interactive widget that the user can open and close. Any sort of content can be put inside the <details> tag.
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+The <figcaption> element to mark up a photo in a document. The <figcaption> element also contains a caption.
+The <footer> tag defines a footer for a document or section.A <footer> element should contain information about its containing element.
+The <header> element represents a container for introductory content or a set of navigational links.
+The <main> tag specifies the main content of a document. The content inside the <main> element should be unique to the document.
+The <mark> tag defines marked text. Use the <mark> tag if you want to highlight parts of your text.
+The <nav> tag defines a set of navigation links.
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+The <time> tag defines a human-readable date/time. This element can also be used to encode dates and times in a machine
+
