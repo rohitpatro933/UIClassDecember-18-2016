@@ -1,0 +1,250 @@
+Homework 5
+
+explain all input types with examples.
+Ans- Input Type Text
+<input type="text"> defines a one-line text input field. This input type can take text content by the user. The input can be name, place, etc…
+Example- <form>
+  First name:<br>
+  <input type="text" name="firstname" value="Rohit"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Patro">
+</form>
+
+Input Type Password
+<input type="password"> defines a password field. This input type is used to take a username and a password to login into some website. The password can not be seen while it is entered.
+Example-
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+Input Type Submit
+<input type="submit"> defines a button for submitting form data to a form-handler. This input type is used to submit after the user has entered all his required data.
+Example-
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Rohit"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Patro"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+Input Type Reset
+<input type="reset"> defines a reset button that will reset all form values to their default values. This input type is used when the user has messed up all the data that has o be entered, then this input type is used to get back the default information so that the user can reenter all the data required.
+Example-
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Rohit"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Patro"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+Input Type Radio
+<input type="radio"> defines a radio button. The radio input type is used when user has to choose only one result among many options.
+Example-
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+
+Input Type Checkbox
+<input type="checkbox"> defines a checkbox. This input type is used when the user can choose more than one option in a list of options.
+Example-
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+
+Input Type Button
+<input type="button"> defines a button. This input user type is used only when the user is needed to see some extra information or image or to redirect to any other link. For example is the user is reading an article in a website, then there is a button which shows more info, if the user wants to read about that article , then he has to click on the more info button.
+
+explain all the input attributes?
+Ans- 
+Accept- Specifies a comma-separated list of content types that the server accepts.
+Align- Defines the alignment of content in the input.
+Alt- This specifies text to be used in case the browser/user can't find the input control.
+Autocomplete - Specifies for enabling or disabling of autocomplete in <input> element.
+Autofocus- Specifies that <input> element should automatically get focus when the page loads.
+Checked- If type="radio" or type="checkbox" it will already be selected when the page loads.
+Disabled- Disables the input control. The button won't accept changes from the user. It also cannot receive focus and will be skipped when tabbing.
+Form- Specifies one or more forms.
+Formaction- Specifies the URL of the file that will process the input control when the form is submitted.
+Formenctype- Specifies how the form-data should be encoded when submitting it to the serve.
+Formmethod- Defines the HTTP method for sending data to the action URL.
+Formnovalidate- Defines that form elements should not be validated when submitted.
+Height- Specifies the height.
+List- Specifies the <datalist> element that contains pre-defined options for an <input> element.
+Max- Specifies the maximum value.
+Maxlength- Defines the maximum number of characters allowed in a text field.
+Min- Specifies the minimum value.
+Multiple- Specifies that a user can enter multiple values.
+Name- Assigns a name to the input control.
+Pattern- Specifies a regular expression that an <input> element's value is checked against.
+Readonly- Sets the input control to read-only. It won't allow the user to change the value. The control however, can receive focus and are included when tabbing through the form controls.
+Required- Specifies that an input field must be filled out before submitting the form.
+Size- Specifies the width of the control. If type="text" or type="password" this refers to the width in characters. Otherwise it's in pixels.
+Src- Defines the URL of the image to display. Used only for type="image".
+Step- Specifies the legal number intervals for an input field.
+Type- Specifies the type of control.
+Value- Specifies the intial value for the control.If type="checkbox" or type="radio" this attribute is required.
+Width- Specifies the width.
+
+
+
+what are sematic elements ?
+HTML serves both humans and machines, suggesting the purpose of the content enclosed within an HTML tag.
+Some of the tags they used were actually semantic. Their roles are clear for both us and the user agent: <form> simply contains a form, just like <img> contains an image. 
+
+
+
+difference between article, section, div
+Ans- The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. The article defines about the header title.
+
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. This tag is used when you need to separate a section or chapter in a document. You can even set a hyperlink to the section so that we can navigate directly to the selected section.
+The <div> tag is used to divide your html code into different sets which helps to make the code better. Using the <div> tag user can organize the code in a simple way and can even add style tag to the code or edit the code easily.
+
+explain with exmaples about <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>
+Ans- 
+<article>
+The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+Example- <article>
+  <h1>Google Chrome</h1>
+  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article>
+
+<aside>
+The <aside> tag defines some content aside from the content it is placed in. The aside content should be related to the surrounding content.
+Example-
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+
+<details>
+The <details> tag specifies additional details that the user can view or hide on demand. The <details> tag can be used to create an interactive widget that the user can open and close. Any sort of content can be put inside the <details> tag.
+Example-
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+<figure>
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it does not affect the flow of the document.
+Example-
+<figure>
+  <img src="img.jpg" alt="Text" width="304" height="228">
+</figure>
+
+<figcaption>
+The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or last child of the <figure> element.
+Example-
+<figure>
+  <img src="img.jpg" alt="text" width="304" height="228">
+  <figcaption>img. – caption of the image.</figcaption>
+</figure>
+
+<header>
+The <header> element represents a container for introductory content or a set of navigational links. You can have several <header> elements in one document. 
+Example-
+<article>
+  <header>
+    <h1>Most important heading here</h1>
+    <h3>Less important heading here</h3>
+    <p>Some additional information here</p>
+  </header>
+  <p>article information....</p>
+</article>
+
+<footer>
+The <footer> tag defines a footer for a document or section. A <footer> element should contain information about its containing element. There can be many <footer> elements in one document.
+Example-
+<footer>
+  <p>Posted by: Rohit</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+
+<main>
+The <main> tag specifies the main content of a document. The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. There must not be more than one <main> element in a document.
+Example-
+<main>
+  <h1>Web Browsers</h1>
+  <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+  <article>
+    <h1>Google Chrome</h1>
+    <p>Google Chrome is a free, open-source web browser developed by Google,
+    released in 2008.</p>
+  </article>
+
+  <article>
+    <h1>Internet Explorer</h1>
+    <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+  </article>
+
+  <article>
+    <h1>Mozilla Firefox</h1>
+    <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+  </article>
+</main>
+
+<mark>
+The <mark> tag defines marked text. Use the <mark> tag if you want to highlight parts of your text.
+Example-
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<nav>
+The <nav> tag defines a set of navigation links. All links of a document should not be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+Example-
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+<section>
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+Example-
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+
+<summary>
+The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+Example-
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+<time>
+The <time> tag defines a human-readable date/time. This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar.
+Example-
+<p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+
+what are forms and what is form validation in html?
+Ans- HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to use it on its own.
+The ability to validate most user data without relying on scripts is known as data validation. All  <input> elements can be validated using the attributes. If an element requires a value before the submission of the form, you can mark the element using the required attribute. When this attribute is true, the field is not allowed to be empty.
+
+differences between html4 and html5?
+Ans- 
+	The simpler doctype declaration is just one of the many novelties in HTML5. Now you need to write only: <!doctype html>
+	The syntax of HTML5 is more compatible when compared with HTML4.
+	HTML5, <header> and <footer> are unnecessary to be identified with a <div> tag.
+	HTML5 has adopted <section> and <article> tags which allows you to mark specific areas of your layouts.
+	The audio and video files can be added easily. There are also some new multimedia elements and attributes, such as <track>, that provides text tracks for the video element.
+	HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to use it on its own.
