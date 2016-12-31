@@ -242,9 +242,9 @@ The ability to validate most user data without relying on scripts is known as da
 
 differences between html4 and html5?
 Ans- 
-	The simpler doctype declaration is just one of the many novelties in HTML5. Now you need to write only: <!doctype html>
-	The syntax of HTML5 is more compatible when compared with HTML4.
-	HTML5, <header> and <footer> are unnecessary to be identified with a <div> tag.
-	HTML5 has adopted <section> and <article> tags which allows you to mark specific areas of your layouts.
-	The audio and video files can be added easily. There are also some new multimedia elements and attributes, such as <track>, that provides text tracks for the video element.
-	HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to use it on its own.
+-->	The simpler doctype declaration is just one of the many novelties in HTML5. Now you need to write only: <!doctype html>
+-->The syntax of HTML5 is more compatible when compared with HTML4.
+-->HTML5, <header> and <footer> are unnecessary to be identified with a <div> tag.
+-->HTML5 has adopted <section> and <article> tags which allows you to mark specific areas of your layouts.
+-->The audio and video files can be added easily. There are also some new multimedia elements and attributes, such as <track>, that provides text tracks for the video element.
+-->HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to use it on its own.
