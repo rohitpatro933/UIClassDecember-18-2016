@@ -1,0 +1,50 @@
+Homework 6
+
+different types in css?
+Ans- There are three different types of css.
+-->Inline styles
+-->Internal styles
+-->External styles
+
+Inline CSS Stylesheet- A CSS or cascading style sheets style that is written directly on the element it affects.
+Inline styles, while they have a purpose, are not the best way to maintain your Web site.
+Inline styles don't separate content from design.
+While a screen reader or other assistive device might be able to handle the attributes and tags effectively, some of the older devices don't and can result in some strange Web pages.
+Inline styles make your pages bigger.
+
+Internal CSS Stylesheet- An internal stylesheet holds the CSS code for the webpage in the head section of the particular file.
+This makes it easy to apply styles like classes or id's in order to reuse the code.
+The downside of using an internal stylesheet is that changes to the internal stylesheet only effect the page the code is inserted into.
+All the code for the Internal CSS stylesheet is contained between the <head></head> section of your websites code.
+
+External CSS Stylesheet- The External Stylesheet is a .css file that you link your website to.
+This makes it so that what ever you change in the .css sheet, will effect every page in your website. This prevents you from having to make many code changes in each page.
+When using an external stylesheet you must reference the stylesheet in the HTML page that is using it. You would add the code below to your HTML document to reference a stylesheet in the same location as the HTML page.
+You can name your stylesheet whatever you like and link to as many as you like. You can simply link to it in your head section and every edit your make to the "style.css" sheet will be globally changed through out the site.
+
+
+
+what is cascading in css?
+Ans- Cascading" means that styles can fall (or cascade) from one style sheet to another, enabling multiple style sheets to be used on one HTML document.
+Every Web page is affected by at least one style sheet, even if the web designer doesn't apply any styles. This style sheet is the user agent style sheet.
+It is an algorithm defining how to combine properties values originating from different sources.
+
+
+
+why do we need to use css?
+Ans- CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+--> With an external stylesheet file, you can change the look of an entire website by changing just one file.
+--> CSS removed the style formatting from the HTML page.
+--> CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+--> It can control the layout of multiple web pages all at once.
+
+
+
+which type of css is a better practice?
+Ans- External style sheets is the best practice.External style sheets give you all the benefits of CSS best practices and are easy to use. If you must put styles in a specific HTML document, put them in internal style sheets in the <head> of your document. That way, at least they're still separate from the content. Avoid using inline styles for any styles on your Web page. On pages I design, I try to use inline styles only for while I'm testing - I can add the styles to an element and know that with the cascade.
+
+
+
+what are selectors and why do we need them in css?
+Ans- selectors are the patterns used to select the element you want to style.
+Selectors are used to fine elements based on their id, classes, types, attributes, values os attributes etc...
