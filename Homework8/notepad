@@ -1,0 +1,408 @@
+Homework 8
+
+1) what are psuedo classes in css?
+Ans-
+A pseudo-class is used to define a special state of an element.
+It is used for styling an element when a user mouses over it, Style an element when it gets focus.
+
+
+
+2) what are pusedo elements in css?
+Ans-
+A CSS pseudo-element is used to style specified parts of an element.
+It is used for styling the first letter, or line, of an element. It ca even insert content before, or after, the content of an element.
+
+
+3) diff between pusedo classes and psuedo elements?
+Ans-
+Pseudo-Class
+A pseudo-class is way of selecting certain parts of a HTML document, based in principle not on the HTML document tree itself and its elements or on characteristics like name, attributes or contents, but on other phantom conditions like language encoding or the dynamic state of an element.
+The original pseudo-class defined dynamic states of an element that are entered and exited over time, or through user intervention. CSS2 expanded on this concept to include virtual conceptual document components or inferred portions of the document tree e.g. first-child. Pseudo-classes operate as if phantom classes were added to various elements.
+
+Pseudo-elements
+PSEUDO-Elements are used to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. In other words they allow logical elements to be defined which are not actually in the document element tree. Logical elements allow implied semantic structure to be addressed in CSS selectors.
+Pseudo-elements may only be applied to external and document-level contexts - not to in-line styles. Pseudo-elements are restricted in where they can appear in a rule. They may only appear at the end of a selector chain (after the subject of the selector). They should come after any class or ID names found in the selector. Only one pseudo-element can be specified per selector. To address multiple pseudo-elements on a single element structure, multiple style selector/declaration statements must be made.
+
+
+
+4) explain all pusedo classes and elements with examples?
+Psuedo classes-
+:active Selector
+The :active selector is used to select and style the active link.
+A link becomes active when you click on it.
+The :active selector can be used on all elements, not only links.
+example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:active, h1:active, a:active{
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div class="intro">
+  <h2 id="firstname">My name is Rohit</h2>
+  <p id="hometown">I live in Fremont</p>
+  <p>My <b>best</b> friend is Ronaldo</p>
+</div>
+
+<h2>Links:</h2>
+<p>Here are my favorite websites:</p>
+<a href="http://www.youtube.com">youtube.com</a>
+<a href="http://www.google.com" target="_blank">google.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+<p><b>Note:</b> Click on the paragraphs, headers, and links to see what is getting a style.</p>
+</body>
+</html>
+
+
+:checked Selector
+The :checked selector matches every checked <input> element (only for radio buttons and checkboxes) and <option> element.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+option:checked {
+    height: 100px;
+    width: 100px;
+}
+</style>
+</head>
+<body>
+
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="benz">Benz</option>
+  <option value="bmw">BMW</option>
+  <option value="audi">Audi</option>
+</select>
+
+</body>
+</html>
+
+
+:disabled Selector
+The :disabled selector matches every disabled element.
+
+:empty Selector
+The :empty selector matches every element that has no children.
+
+:enabled Selector
+The :enabled selector matches every enabled element.
+
+:first-child Selector
+The :first-child selector is used to select the specified selector, only if it is the first child of its parent.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>This paragraph is the first child of its parent (body).</p>
+
+<h1>Welcome to My Homepage</h1>
+<p>This paragraph is not the first child of its parent.</p>
+
+<div>
+  <p>This paragraph is the first child of its parent (div).</p>
+  <p>This paragraph is not the first child of its parent.</p>
+</div>
+
+</body>
+</html>
+
+:first-of-type Selector
+The :first-of-type selector matches every element that is the first child, of a particular type, of its parent.
+example-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p:first-of-type {
+    background: red;
+}
+</style>
+</head>
+<body>
+
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+</body>
+</html>
+
+
+:focus Selector
+The :focus selector is used to select the element that has focus. The :focus selector is allowed on elements that accept keyboard events or other user inputs.
+
+:hover Selector
+The :hover selector is used to select elements when you mouse over them. The :hover selector can be used on all elements, not only on links.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:hover {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<a href="http://www.google.com">google.com</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+</body>
+</html>
+
+:in-range Selector
+The :in-range selector selects all elements with a value that is within a specified range. The :in-range selector only works for elements with range limitations, such as input elements with min and max attributes.
+
+:invalid Selector
+The :invalid selector selects form elements with a value that does not validate according to the element's settings. The :invalid selector only works for form elements with limitations, such as input elements with min and max attributes, email fields without a legal email, or number fields without a numeric value, etc.
+
+:last-child Selector
+The :last-child selector matches every element that is the last child of its parent.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p:last-child {
+    background: #ff0000;
+}
+</style>
+</head>
+<body>
+
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+</body>
+</html>
+
+:nth-child() Selector
+The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p:nth-child(2) {
+    background: red;
+}
+</style>
+</head>
+<body>
+
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+</body>
+</html>
+
+:only-of-type Selector
+The :only-of-type selector matches every element that is the only child of its type, of its parent.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p:only-of-type {
+    background: red;
+}
+</style>
+</head>
+<body>
+
+<div><p>This is a paragraph.</p></div>
+
+<div><p>This is a paragraph.</p><p>This is a paragraph.</p></div>
+
+</body>
+</html>
+
+:optional Selector
+The :optional selector selects form elements which are optional.
+Form elements with no required attribute are defined as optional.
+The :optional selector only applies to the form elements: input, select and textarea.
+
+:out-of-range Selector
+The :out-of-range selector selects all elements with a value that is outside a specified range. The :out-of-range selector only works for elements with range limitations, such as input elements with min and max attributes.
+Example- 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:out-of-range {
+    border: 2px solid red;
+}
+</style>
+</head>
+<body>
+
+<h3>A demonstration of the :out-of-range selector.</h3>
+
+<input type="number" min="5" max="10" value="17">
+
+<p>Try typing a number within the given range (between 5 and 10), to see the styling disappear.</p>
+
+</body>
+</html>
+
+
+:target Selector
+URLs with an # followed by an anchor name link to a certain element within a document. The element being linked to is the target element. The :target selector can be used to style the current active target element.
+
+:valid Selector
+The :valid selector selects form elements with a value that validates according to the element's settings. The :valid selector only works for form elements with limitations, such as input elements with min and max attributes, email fields with a legal email, or number fields with a numeric value, etc.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:valid {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h3>An example of the :valid selector.</h3>
+
+<input type="email" value="support@exampel.com">
+
+<p>Try typing an illegal e-mail address, and see the styling disappear.</p>
+
+</body>
+</html>
+
+
+Psuedo Elements
+::after Selector
+The ::after selector inserts something after the content of each selected element(s).
+Use the content property to specify the content to insert. Use the ::before selector to insert something before the content.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::after { 
+    content: " - Remember this";
+}
+</style>
+</head>
+<body>
+
+<p>My name is Rohit</p>
+<p>I live in Fremont</p>
+
+</body>
+</html>
+
+
+::before Selector
+The ::before selector inserts something before the content of each selected element(s).
+Use the content property to specify the content to insert. Use the ::after selector to insert something after the content.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+    content: "Read this -";
+}
+</style>
+</head>
+<body>
+
+<p>My name is Rohit</p>
+<p>I live in Fremont</p>
+
+</body>
+</html>
+
+
+::first-letter Selector
+The ::first-letter selector is used to add a style to the first letter of the specified selector.
+
+
+::first-line Selector
+The ::first-line selector is used to add a style to the first line of the specified selector.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>WWF's Mission Statement</h1>
+<p>To stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature, by; conserving the world's biological diversity, ensuring that the use of renewable natural resources is sustainable, and promoting the reduction of pollution and wasteful consumption.</p>
+
+</body>
+</html>
+
+
+::selection Selector
+The ::selection selector matches the portion of an element that is selected by a user.
+Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+</body>
+</html>
+
+
+
+5) what are media queries in css and how can you use them ?
+A media query consists of an optional media type and zero or more expressions that limit the style sheets' scope by using media features, such as width, height, and color.
+Media queries consist of an optional media type and can, as of the CSS3 specification, contain zero or more expressions, expressed as media features. The result of the query is true if the media type specified in the media query matches the type of device the document is being displayed on and all expressions in the media query are true.
+
+
+
+6) what is responsive web design?
+Ans- Responsive web design makes your web page look good on all devices. It only uses css and HTML.
+Responsive web design (RWD) is an approach to web design aimed at allowing desktop webpages to be viewed in response to the size of the screen. Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element.
