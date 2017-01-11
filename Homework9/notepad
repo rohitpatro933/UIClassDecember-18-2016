@@ -1,0 +1,227 @@
+1) what are media queries?
+A media query consists of an optional media type and zero or more expressions that limit the style sheets' scope by using media features, such as width, height, and color. Media Queries is a CSS3 module allowing content to adapt to the conditions such as screen resolution.
+
+
+2) In media queries what are following properties min-width, max-width, resolution, screen, print, speech, with examples
+min-width
+The min-width property is used to set the minimum width of an element. This prevents the value of the width property from becoming smaller than min-width.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    min-width: 150px;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+<p>The minimum width of the paragraph is 150px.</p>
+
+</body>
+</html>
+
+
+max-width
+The max-width property is used to set the maximum width of an element. This prevents the value of the width property from becoming larger than max-width.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    max-width: 100px;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>The maximum width of this paragraph is set to 100px.</p>
+
+</body>
+</html>
+
+
+resolution-
+Resolution Indicates the pixel density of the output device. The resolution may be specified in either dots per inch (dpi) or dots per centimeter.
+
+
+screen-
+Intended primarily for color computer screens. This media type is used fo making the screen look colorful and attractive.
+
+print-
+Intended for paged material and for documents viewed on screen in print preview mode.
+
+speech
+Intended for speech synthesizers. This media type is for assigning sound, recording or voice speech to the data.
+
+
+
+3) what are position property values in css (static, relative, absolute, fixed) explain differences ?
+CSS position Property- The position property specifies the type of positioning method used for an element.
+static-
+Default value. Elements render in order, as they appear in the document flow.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+    position: static;
+    left: 100px;
+    top: 150px;
+}
+</style>
+</head>
+<body>
+
+<h2>This is a heading with an absolute position</h2>
+
+
+</body>
+</html>
+
+absolute- The element is positioned relative to its first positioned (not static) ancestor element.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+</style>
+</head>
+<body>
+
+<h2>This is a heading with an absolute position</h2>
+
+
+</body>
+</html>
+
+fixed- The element is positioned relative to the browser window.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+    position: fixed;
+    left: 100px;
+    top: 150px;
+}
+</style>
+</head>
+<body>
+
+<h2>This is a heading with an absolute position</h2>
+
+
+</body>
+</html>
+
+relative- The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+</style>
+</head>
+<body>
+
+<h2>This is a heading with an absolute position</h2>
+
+
+</body>
+</html>
+
+
+
+4) what is a float and clear property in css?
+The float Property-
+In its simplest use, the float property can be used to wrap text around images.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    float: right;
+}
+</style>
+</head>
+<body>
+
+
+<p><img src="http://wallpaper-gallery.net/images/batman-hd-wallpaper/batman-hd-wallpaper-10.jpg" alt="Batman" width="200" height="180">
+Batman is a fictional superhero appearing in American comic books published by DC Comics.
+Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents Thomas Wayne and Martha Wayne as a child, he swore vengeance against criminals, an oath tempered by a sense of justice. Wayne trains himself physically and intellectually and crafts a bat-inspired persona to fight crime.
+</p>
+
+</body>
+</html>
+
+
+The clear Property-
+The clear property is used to control the behavior of floating elements. Elements after a floating element will flow around it. To avoid this, use the clear property.
+
+
+5) what is bootstrap grid system? rows and columns?
+Bootstrap's grid system allows up to 12 columns across the page. Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.
+Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+Use rows to create horizontal groups of columns.
+Content should be placed within columns, and only columns may be immediate children of rows.
+Predefined classes like .row and .col-sm-4 are available for quickly making grid layouts.
+Columns create gutters via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
+Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three .col-sm-4
+
+
+
+6) what are xs, sm, md, lg in bootstrap?
+Extra Small	devices-
+Extra Small	devices have screen width Less than 768px.
+
+Small Devices-
+Assume we have a simple layout with two columns. We want the columns to be split 25%/75% for small devices.
+Small devices are defined as having a screen width from 768 pixels to 991 pixels.
+
+Medium Devices-
+medium devices the design may be better as a 50%/50% split. Medium devices are defined as having a screen width from 992 pixels to 1199 pixels. For medium devices we will use the .col-md-* classes.
+
+Large Devices-
+on large devices the design may be better as a 33%/66% split.Large devices are defined as having a screen width from 1200 pixels and above. For large devices we will use the .col-lg-* classes.
+Example-
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:yellow;">
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:pink;">
+      <p>Sed ut perspiciatis...</p>
+    </div>
+  </div>
+</div>
+
+
+
+7) differences between container and container-fluid?
+The grid system is used to define the layout of the web pages by using a series of rows and columns.For the containing element, you may specify either of these two classes:
+container
+container-fluid
+The difference between these two containing classes are
+The .container class is the fixed width container. That does not mean it is not responsive. It is responsive; however, it is fixed based on screen size. The screen sizes include:
+xs for extra small devices (used for less than 768 e.g smart phones, mobile etc.)
+sm for small screens (From 768 pixels and up e.g. tablets)
+md for the medium screen (>= 992 pixels. Desktops/Laptops)
+lg for large screens (>= 1200. Pixels e.g. large desktops)
+If you use the container class and check the webpage in a browser, it will adjust according to the screen and browser size. For example, if your current browser width is more than 1200, it will adjust to the 1170px wide. If you resize the browser to small size, it will remain same until it reaches 992px. At this point, the container class will adjust to 970px wide.
+
+On the other hand, the container-fluid class will take the full width of the viewport. If you use the container-fluid and resize the browser, you may notice the content inside it will adjust with every pixel to take the full available width.
