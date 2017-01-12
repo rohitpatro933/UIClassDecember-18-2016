@@ -1,0 +1,257 @@
+1) bootstrap buttons?
+Use Bootstrap’s custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more. Button classes on <a> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers.
+Example-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+</body>
+</html>
+
+
+2) bootstrap input and input-sizing?
+Bootstrap Input
+Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color. Inputs will NOT be fully styled if their type is not properly declared.
+Bootstrap supports the following form controls:
+input
+textarea
+checkbox
+radio
+select
+
+
+Input Sizing in Forms
+Set the heights of input elements using classes like .input-lg and .input-sm.
+Set the widths of elements using grid column classes like .col-lg-*and .col-sm-*.
+Example-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Input Sizing</h2>
+  <p>The form below shows input elements with different heights using .input-lg and .input-sm:</p>
+  <form>
+    <div class="form-group">
+      <label for="inputdefault">Default input</label>
+      <input class="form-control" id="inputdefault" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputlg">input-lg</label>
+      <input class="form-control input-lg" id="inputlg" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputsm">input-sm</label>
+      <input class="form-control input-sm" id="inputsm" type="text">
+    </div>
+    <div class="form-group">
+      <label for="sel1">Default select list</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sel2">input-lg</label>
+      <select class="form-control input-lg" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sel3">input-sm</label>
+      <select class="form-control input-sm" id="sel3">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+3) bootstrap glyphicon?
+Glyphicons
+Bootstrap includes 260 glyphs from the Glyphicon Halflings set. These icons are used on the buttons as symbols.
+Example-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Music Glyph</h2>
+      <p>Music icon: <span class="glyphicon glyphicon-music"></span></p>    
+      <p>Music icon as a link:
+        <a href="#">
+          <span class="glyphicon glyphicon-music"></span>
+        </a>
+      </p>
+      <p>Music icon on a button:
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-music"></span> Music 
+        </button>
+      </p>
+      <p>Music icon on a styled link button:
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-music"></span> Music 
+        </a>
+      </p> 
+    </div>
+  </body>
+</html>
+
+
+4) bootstrap, images, wels, jumbotron, panel, alerts, badges, labels, lists, pagination, pills
+, tabs
+Bootstrap Images-
+This class can be used to style any image, Create responsive images by adding an .img-responsive class to the <img> tag. The image will then scale nicely to the parent element.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Image</h2>
+  <img src="https://static1.squarespace.com/static/5422e68ae4b0c5030ad2a887/54383d0ce4b0b3177a3a1f2f/54383d0de4b0b3177a3a1f30/1412971796934/lighthouse+bg.jpg?format=1500w" class="img-responsive" alt="lighthouse" width="304" height="236"> 
+</div>
+
+</body>
+</html>
+
+
+Bootstrap Wells-
+The .well class adds a rounded border around an element with a gray background color and some padding.
+
+
+Bootstrap Jumbotron-
+A jumbotron indicates a big box for calling extra attention to some special content or information. A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+Example-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Batman</h1>      
+    <p>Batman is a fictional superhero appearing in American comic books published by DC Comics.</p>
+  </div>
+  <p>This is some text.</p>      
+  <p>This is another text.</p>      
+</div>
+
+</body>
+</html>
+
+
+Bootstrap Alerts-
+Bootstrap provides an easy way to create predefined alert messages. Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger
+Example-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap alerts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Alerts</h2>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+Bootstrap Pagination-
+a web site with lots of pages, you may wish to add some sort of pagination to each page. This helps to select the page by its number.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pagination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Pagination</h2>
+    <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+</body>
+</html>
