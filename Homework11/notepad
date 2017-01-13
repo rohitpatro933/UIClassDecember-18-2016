@@ -1,0 +1,71 @@
+1) display property values?
+CSS display Property
+The display property specifies the type of box used for an HTML element.
+inline-
+Displays the elements in a single line.
+block-
+Displays the elements as block element in a different line.
+inline-block
+Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box.
+
+
+
+2) display none and visibility hidden differences in css? when do you use either one of them?
+none-
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved. The <script> element uses display: none; as default.
+Hidden-
+visibility:hidden; also hides an element. However, the element will still take up the same space as before. The element will be hidden, but still affect the layout.Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there.
+
+
+3) css box model?
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements.
+Example-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+</style>
+</head>
+<body>
+
+<h2>Superman</h2>
+
+<p>Superman is a fictional superhero appearing in American comic books published by DC Comics.</p>
+
+<div>The origin story of Superman relates that he was born Kal-El on the alien planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Krypton's destruction. Discovered and adopted by a Kansas farmer and his wife, the child is raised as Clark Kent and imbued with a strong moral compass. Very early on he started to display various superhuman abilities, which, upon reaching maturity, he resolved to use for the benefit of humanity through a secret "Superman" identity.</div>
+
+</body>
+</html>
+
+
+4) box sizing in css?
+The box-sizing property allows us to include the padding and border in an element's total width and height. By default, the width and height of an element is calculated like this:
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+
+5) what SASS?
+Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself.CSS3 consists of a series of selectors and pseudo-selectors that group rules that apply to them. Sass[5] (in the larger context of both syntaxes) extends CSS by providing several mechanisms available in more traditional programming languages, particularly object-oriented languages, but that are not available to CSS3 itself.The official implementation of Sass is open-source and coded in Ruby.
+Sass allows variables to be defined. Variables begin with a dollar sign ($). Variable assignment is done with a colon (:)
+SassScript supports four data types:
+Numbers (including units)
+Strings (with quotes or without)
+Colors (name, or names)
+Booleans
+
+
+6) what is preprocessor? why do you need to use preprocessor?
+Preprocessor is a program that processes its input data to produce output that is used as input to another program. The output is said to be a preprocessed form of the input data, which is often used by some subsequent programs like compilers. The amount and kind of processing done depends on the nature of the preprocessor.
+Most preprocessors are specific to a particular data processing task. A preprocessor may be promoted as being general purpose, meaning that it is not aimed at a specific usage or programming language, and is intended to be used for a wide variety of text processing tasks.
