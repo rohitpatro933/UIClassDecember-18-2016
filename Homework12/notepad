@@ -1,0 +1,52 @@
+1) what are the data types in java script?
+JavaScript Data Types
+Strings-
+A string (or a text string) is a series of characters like "words".
+Strings are written with quotes. You can use single or double quotes.
+
+Numbers-
+JavaScript has only one type of numbers.
+Numbers can be written with, or without decimals.
+
+Booleans-
+Booleans can only have two values: true or false.
+Booleans are often used in conditional testing.
+
+Undefined-
+In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined.
+Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+Null-
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+Unfortunately, in JavaScript, the data type of null is an object.
+
+
+2) what are the diff between java and javascript espically in terms of variables?
+Java is an OOP programming language while Java Script is an OOP scripting language.
+Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only.
+Java code needs to be compiled while JavaScript code are all in text.
+They require different plug-ins.
+In my opinion, JavaScript's main benefit is that it can be understood by the common human. It is much easier and more robust than Java. It allows for fast creation of web page events. Many JavaScript commands are what are known as Event Handlers: They can be embedded right into existing HTML commands. JavaScript is a little more forgiving than Java. It allows more freedom in the creation of objects. Java is very rigid and requires all items to be denoted and spelled out. 
+Java must be compiled into what is known as a "machine language" before it can be run on the Web. Basically what happens is after the programmer writes the Java program and checks it for errors, he or she hands the text over to another computer program that changes the text code into a smaller language. That smaller language is formatted so that it is seen by the computer as a set program with definite beginning and ending points. Nothing can be added to it and nothing can be subtracted without destroying the program.
+JavaScript is text-based. You write it to an HTML document and it is run through a browser. You can alter it after it runs and run it again and again. Once the Java is compiled, it is set. Sure, you can go back to the original text and alter it, but then you need to compile again.
+
+
+3) why do we use javascript in web pages?
+JavaScript is a programming language that is run by most modern browsers. It supports object-oriented programming and procedural programming. It can be used to control web pages on the client side of the browser, server-side programs, and even mobile applications. This language is used commonly in combination with HTML, CSS, and AJAX.
+While HTML markup language allows web developers to format content, JavaScript allows them to make the page dynamic. For example, HTML allows for making text bold, creating text boxes, and creating buttons, whereas JavaScript allows for changing text on the page, creating pop-up messages, and validating text in text boxes to make sure required fields have been filled. JavaScript makes web pages more dynamic by allowing users to interact with web pages, click on elements, and change the pages.
+The purpose of JavaScript language, when used in web development, is to manipulate the web page elements and to make it dynamic. Imagine a web page that contains just text content. You can read it and you can even click on links to move to a next page, but your interaction with the page would be limited.
+
+
+4) how to include javascript into webpages?
+-->Open up the Notepad or other simple text-editing software.
+-->Start a basic HTML document. Include the HTML tags, including the <head> and </head> combination pair as well as the <body> and </body> combination pair. Type all the needed tags to start the page.
+-->Add a script tag to the HTML's head, and let the text editor know that you'd like to use a javascript language to write your HTML's javascript "program". Add a <script language="javascript"> tag in the head.
+-->Call up other JavaScript scripts using a JavaScript function, Add it a src (stands for "src") property to the script tag and include the complete web address of the file.
+-->Make sure to end your HTML document.Save your page. Save the page as (anything).html, it will become a web page. Double click on the icon, and watch as your page loads and an alert box comes up.
+
+
+5) where to include java script in webpages and why?
+Including a script anywhere inside the head or body sections of your document. However, to keep your document well structured there are some basic guidelines.
+Most scripts can go inside the document head. This keeps them out of the way of the main document content.
+If your script needs to run at a certain stage during page layout, it should be put at the correct stage of the document, almost always somewhere inside the document body. If the script is very small, then put it all where it will be used. If it is larger, then put it inside the head inside a function, and you can then call that function when you need it.
+If your script is used on more than one page, or if it is of any significant size, then put it in its own file, and load it in the document head. Not only will this help to keep the clutter of the document, but it will also help avoid potential syntax problems. As an extra benefit, these can be used by multiple pages, allowing browsers to use their cache, and saving bandwidth for you and your visitors.
