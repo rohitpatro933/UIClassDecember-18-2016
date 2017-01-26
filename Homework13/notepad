@@ -1,0 +1,118 @@
+1) operational precendence?
+Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+. [ ] ( )     Field access, array indexing, function calls, and expression grouping
+* / %         Multiplication, division, modulo division
++ - +         Addition, subtraction, string concatenation
+
++ --> number, string  (In addition the output can be a number as well as a string.)
+- --> number          (In subtraction , the output can only be a number.)
+/ * --> number          (In division and multiplication , the output can only be a number and they have more priority than addition and subtraction.)
+
+Example-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script>
+			var a = '1'+ '2' + '3';
+			console.log(a);
+			console.log(typeof a);
+			var b = 1 + 2 + '3';
+			console.log(b); 
+			console.log(typeof b); 
+			var c = '1' + 2 + 3;
+			console.log(c);
+			console.log(typeof c);
+			var d = '1' + 2 - 3;
+			console.log(d);
+			console.log(typeof d); 
+			var e = 1 + 2 * 3;
+			console.log(e);
+			console.log(typeof e);
+			var f = '1' + 2 + (3 + 4);
+			console.log(f);
+			console.log(typeof f);
+		</script>
+	</body>
+</html>
+
+
+2) truthy value and falsy value?
+JavaScript supports Boolean data types; values which can be set to true or false. In addition, everything in JavaScript has an inherent Boolean value, generally known as either truthy or falsy.
+
+The following values are always falsy:
+
+false
+0 (zero)
+"" (empty string)
+null
+undefined
+NaN
+
+The following values are always truthy:
+
+true
+any number other than 0
+any other string which is not empty
+any object 
+any array []
+
+
+3) logical and(&&), logical or(||)?
+Logical AND (&&)
+Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands are true; otherwise, returns false.
+
+Logical OR (||)
+Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand is true.
+
+
+4) conditions in javascript?
+Conditional Statements
+You can use conditional statements in your code to perform different actions for different decisions.
+In JavaScript we have the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
+
+5) (post and pre) increment and (post and pre) decrement?
+The Increment and Decrement Operators in JavaScript are used to increase or decrease the value by 1. For instance, Incremental operator ++ is used to increase the existing variable value by 1 (x = x + 1) and decrement operator – – is used to decrease or subtract the existing value by 1 (x = x – 1).
+Example-
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title> Increment and Decrement Operators in JavaScript </title>
+</head>
+ 
+<body>
+<script>
+   var x = 10, y = 20;
+   document.write("<b>----INCREMENT OPERATOR---- </b>");
+   document.write("<br \> Value of x : "+ x); //Original Value
+   document.write("<br \> Value of x : "+ x++); // Using increment Operator
+   document.write("<br \> Value of x : "+ x + "<br \>"); //Incremented value
+    
+   document.write("<br \> <b>----DECREMENT OPERATOR---- </b>");
+   document.write("<br \> Value of y : "+ y); //Original Value
+   document.write("<br \> Value of y : "+ y--); // using decrement Operator
+   document.write("<br \> Value of y : "+ y); //decremented value   
+</script>
+</body>
+</html>
+
+
+
+6) loops (while, do while, for loop)
+Loops can execute a block of code a number of times. Loops are handy, if you want to run the same code over and over again, each time with a different value.
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true.
