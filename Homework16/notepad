@@ -1,0 +1,57 @@
+1) array methods --> forEach, map, reduce, sort, reverse ,...
+
+Array.prototype.forEach()
+forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized.
+
+Array.prototype.map()
+The map() method creates a new array with the results of calling a provided function on every element in this array.
+map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values, including undefined. It is not called for missing elements of the array.
+
+Array.prototype.reduce()
+The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.reduce executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments.
+
+Array.prototype.sort()
+The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.If compareFunction is supplied, the array elements are sorted according to the return value of the compare function.
+
+Array.prototype.reverse()
+The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+
+
+2) what are the different ways to create objects?
+Using the Object() constructor:
+var d = new Object();
+
+Using Object.create() method:
+var a = Object.create();
+This method creates a new object extending the prototype object passed as a parameter.
+
+Using the bracket's syntactig sugar:
+var b = {};
+This is equivalent to Object.create(null) method, using a null prototype as an argument.
+
+Using a function constructor
+var Obj = function(name) {
+  this.name = name
+}
+var c = new Obj("hello");
+The new operator calls a function and setting this of the function to a fresh new Object, and binding the prototype of that new Object to the function's prototype.
+
+
+3) what are properties in object?
+Properties are the values associated with a JavaScript object. A JavaScript object is a collection of unordered properties.
+Properties can usually be changed, added, and deleted, but some are read only.
+
+
+5) how to add a property into object?
+You can add new properties to an existing object by simply giving it a value.
+Assume that the person object already exists - you can then give it new properties.
+
+
+6) how to remove a property in object?
+The delete keyword deletes both the value of the property and the property itself. After deletion, the property cannot be used before it is added back again.The delete operator is designed to be used on object properties. It has no effect on variables or functions.
+The delete operator should not be used on predefined JavaScript object properties. It can crash your application.
+
+
+7) how to update a property value in object?
+To update new properties to an existing object by simply giving it a value.
+Assume that the person object already exists - you can then give it new properties.

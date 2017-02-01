@@ -1,0 +1,157 @@
+Array
+
+An array is a special variable, which can hold more than one value at a time.
+JavaScript arrays are used to store multiple values in a single variable.
+
+Methods
+
+Array.from()
+Creates a new Array instance from an array-like or iterable object.
+Array.isArray()
+Returns true if a variable is an array, if not false.
+Array.of()
+Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
+
+Array.prototype.copyWithin()
+Copies a sequence of array elements within the array.
+Array.prototype.fill()
+Fills all the elements of an array from a start index to an end index with a static value.
+Array.prototype.pop()
+Removes the last element from an array and returns that element.
+Array.prototype.push()
+Adds one or more elements to the end of an array and returns the new length of the array.
+Array.prototype.reverse()
+Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
+Array.prototype.shift()
+Removes the first element from an array and returns that element.
+Array.prototype.sort()
+Sorts the elements of an array in place and returns the array.
+Array.prototype.splice()
+Adds and/or removes elements from an array.
+Array.prototype.unshift()
+Adds one or more elements to the front of an array and returns the new length of the array.
+Accessor methods
+
+These methods do not modify the array and return some representation of the array.
+
+Array.prototype.concat()
+Returns a new array comprised of this array joined with other array(s) and/or value(s).
+Array.prototype.includes() 
+Determines whether an array contains a certain element, returning true or false as appropriate.
+Array.prototype.indexOf()
+Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+Array.prototype.join()
+Joins all elements of an array into a string.
+Array.prototype.lastIndexOf()
+Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+Array.prototype.slice()
+Extracts a section of an array and returns a new array.
+Array.prototype.toSource() 
+Returns an array literal representing the specified array; you can use this value to create a new array. Overrides the Object.prototype.toSource() method.
+Array.prototype.toString()
+Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
+Array.prototype.toLocaleString()
+Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method.
+
+Array.prototype.entries()
+Returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+Array.prototype.every()
+Returns true if every element in this array satisfies the provided testing function.
+Array.prototype.filter()
+Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+Array.prototype.find()
+Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+Array.prototype.findIndex()
+Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
+Array.prototype.forEach()
+Calls a function for each element in the array.
+Array.prototype.keys()
+Returns a new Array Iterator that contains the keys for each index in the array.
+Array.prototype.map()
+Creates a new array with the results of calling a provided function on every element in this array.
+Array.prototype.reduce()
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
+Array.prototype.reduceRight()
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
+Array.prototype.some()
+Returns true if at least one element in this array satisfies the provided testing function.
+Array.prototype.values()
+Returns a new Array Iterator object that contains the values for each index in the array.
+Array.prototype[@@iterator]()
+Returns a new Array Iterator object that contains the values for each index in the array.
+
+
+
+
+Strings-
+JavaScript strings are used for storing and manipulating text.
+The String global object is a constructor for strings, or a sequence of characters.
+
+Methods-
+
+String.prototype.charAt()
+Returns the character at the specified index.
+String.prototype.charCodeAt()
+Returns a number indicating the Unicode value of the character at the given index.
+String.prototype.codePointAt()
+Returns a non-negative integer that is the UTF-16 encoded code point value at the given position.
+String.prototype.concat()
+Combines the text of two strings and returns a new string.
+String.prototype.includes()
+Determines whether one string may be found within another string.
+String.prototype.endsWith()
+Determines whether a string ends with the characters of another string.
+String.prototype.indexOf()
+Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+String.prototype.lastIndexOf()
+Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+String.prototype.localeCompare()
+Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.
+String.prototype.match()
+Used to match a regular expression against a string.
+String.prototype.normalize()
+Returns the Unicode Normalization Form of the calling string value.
+String.prototype.padEnd() 
+Pads the current string from the end with a given string to create a new string from a given length.
+String.prototype.padStart() 
+Pads the current string from the start with a given string to create a new string from a given length.
+String.prototype.quote() 
+Wraps the string in double quotes (""").
+String.prototype.repeat()
+Returns a string consisting of the elements of the object repeated the given times.
+String.prototype.replace()
+Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+String.prototype.search()
+Executes the search for a match between a regular expression and a specified string.
+String.prototype.slice()
+Extracts a section of a string and returns a new string.
+String.prototype.split()
+Splits a String object into an array of strings by separating the string into substrings.
+String.prototype.startsWith()
+Determines whether a string begins with the characters of another string.
+String.prototype.substr()
+Returns the characters in a string beginning at the specified location through the specified number of characters.
+String.prototype.substring()
+Returns the characters in a string between two indexes into the string.
+String.prototype.toLocaleLowerCase()
+The characters within a string are converted to lower case while respecting the current locale. For most languages, this will return the same as toLowerCase().
+String.prototype.toLocaleUpperCase()
+The characters within a string are converted to upper case while respecting the current locale. For most languages, this will return the same as toUpperCase().
+String.prototype.toLowerCase()
+Returns the calling string value converted to lower case.
+String.prototype.toSource() 
+Returns an object literal representing the specified object; you can use this value to create a new object. Overrides the Object.prototype.toSource() method.
+String.prototype.toString()
+Returns a string representing the specified object. Overrides the Object.prototype.toString() method.
+String.prototype.toUpperCase()
+Returns the calling string value converted to uppercase.
+String.prototype.trim()
+Trims whitespace from the beginning and end of the string. Part of the ECMAScript 5 standard.
+String.prototype.trimLeft() 
+Trims whitespace from the left side of the string.
+String.prototype.trimRight() 
+Trims whitespace from the right side of the string.
+String.prototype.valueOf()
+Returns the primitive value of the specified object. Overrides the Object.prototype.valueOf() method.
+String.prototype[@@iterator]()
+Returns a new Iterator object that iterates over the code points of a String value, returning each code point as a String value.
