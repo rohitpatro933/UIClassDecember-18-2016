@@ -1,0 +1,58 @@
+1) What is Object.defineProperty? and all possible configuration options? description?
+Object.defineProperty()
+The Object.defineProperty() method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+This method allows precise addition to or modification of a property on an object. Normal property addition through assignment creates properties which show up during property enumeration (for...in loop or Object.keys method), whose values may be changed, and which may be deleted. This method allows these extra details to be changed from their defaults. By default, values added using Object.defineProperty() are immutable.
+Property descriptors present in objects come in two main flavors: data descriptors and accessor descriptors. A data descriptor is a property that has a value, which may or may not be writable. An accessor descriptor is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.
+Configuration options-
+configurable
+true if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
+Defaults to false.
+value
+The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).
+Defaults to undefined.
+writable
+true if and only if the value associated with the property may be changed with an assignment operator.
+Defaults to false.
+
+
+3) what is Object.create, Object.keys?
+Object.keys() returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+
+Object.create()
+The Object.create() method creates a new object with the specified prototype object and properties.
+
+
+4) can we create object from functions?
+This is probably one of the most common ways. You define a normal JavaScript function and then create an object by using the new keyword. To define properties and methods for an object created using function()
+Example-
+function Apple (type) {
+    this.type = type;
+    this.color = "red";
+    this.getInfo = getAppleInfo;
+}
+function getAppleInfo() {
+    return this.color + ' ' + this.type + ' apple';
+}
+
+
+5) what is a prototype?
+Every JavaScript object has a prototype. The prototype is also an object. All JavaScript objects inherit their properties and methods from their prototype.
+JavaScript Prototypes
+All JavaScript objects inherit the properties and methods from their prototype.
+Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype.
+Objects created with new Date() inherit the Date.prototype. The Object.prototype is on the top of the prototype chain.
+All JavaScript objects inherit from the Object.prototype.
+
+
+6) what is this keyword and its significance?
+the value of this is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called. 
+when creating a new object, this keyword refers to the currentObject.
+
+
+7) what is window?
+All the global variables are attached to the window object.The window object represents an open window in a browser.
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+
+
+8) also look into functions? and what is a callback function?
+JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished.A callback function is executed after the current effect is finished.

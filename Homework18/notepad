@@ -1,0 +1,52 @@
+1) what is call, apply and bind in javascript?
+Bind Method
+the Bind () method primarily to call a function with the this value set explicitly. It other words, bind () allows us to easily set which specific object will be bound to this when a function or method is invoked.
+This might seem relatively trivial, but often the this value in methods and functions must be set explicitly when you need a specific object bound to the function’s this value.
+The need for bind usually occurs when we use the this keyword in a method and we call that method from a receiver object; in such cases, sometimes this is not bound to the object that we expect it to be bound to, resulting in errors in our applications. Don’t worry if you don’t fully comprehend the preceding sentence. It will become clear like teardrop in a moment.
+
+call() method
+The call() method calls a function with a given this value and arguments provided individually.A different this object can be assigned when calling an existing function. this refers to the current object, the calling object. With call, you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.
+call syntax : functionName.call(objectName, param1, param2, param3 ...)
+
+apply() method
+The apply() method calls a function with a given this value and arguments provided as an array (or an array-like object). You can assign a different this object when calling an existing function. this refers to the current object, the calling object. With apply, you can write a method once and then inherit it in another object, without having to rewrite the method for the new object. Apply is very similar to call(), except for the type of arguments it supports. You can use an arguments array instead of a named set of parameters.
+You can also use arguments for the argsArray parameter. arguments is a local variable of a function. It can be used for all unspecified arguments of the called object. Thus, you do not have to know the arguments of the called object when you use the apply method. You can use arguments to pass all the arguments to the called object. The called object is then responsible for handling the arguments.
+apply syntax : functionName.apply(objectName, [param1, param2, param3 ...])
+
+
+2) what is context in javascript?
+Context is most often determined by how a function is invoked. When a function is called as a method of an object, this is set to the object the method is called on.
+principle applies when invoking a function with the new operator to create an instance of an object. When invoked in this manner, the value of this within the scope of the function will be set to the newly created instance.
+When called as an unbound function, this will default to the global context or window object in the browser. However, if the function is executed in strict mode, the context will default to undefined.
+JavaScript is a single threaded language, meaning only one task can be executed at a time. When the JavaScript interpreter initially executes code, it first enters into a global execution context by default. Each invocation of a function from this point on will result in the creation of a new execution context.
+
+
+3) what is lexical scope?
+JavaScript has lexical scoping with function scope. In other words, even though JavaScript looks like it should have block scope because it uses curly braces { }, a new scope is created only when you create a new function.
+The scope of variables is defined by their position in source code. In order to resolve variables, JavaScript starts at the innermost scope and searches outwards until it finds the variable it was looking for. Lexical scoping is nice, because we can easily figure out what the value of a variable will be by looking at the code; whereas in dynamic scoping, the meaning of a variable can change at runtime, making it more difficult.
+
+
+4) what is for in loop?
+The for/in statement loops through the properties of an object.
+The block of code inside the loop will be executed once for each property.
+Syntax
+for (var in object) {
+}
+loops through the properties of an object, Do not use the for/in statement to loop through arrays where index order is important.
+
+
+5) difference between prototype and extends in java script?
+JavaScript Object Prototypes
+Every JavaScript object has a prototype. The prototype is also an object.
+All JavaScript objects inherit their properties and methods from their prototype.
+All JavaScript objects inherit the properties and methods from their prototype.
+Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype.
+Objects created with new Date() inherit the Date.prototype.
+The Object.prototype is on the top of the prototype chain.
+
+Extends-
+The extends keyword is used in class declarations or class expressions to create a class which is a child of another class.
+The extends keyword can be used to subclass custom classes as well as built-in objects.
+The .prototype of the extension must be an Object or null.
+Syntax-
+class ChildClass extends ParentClass { ... }

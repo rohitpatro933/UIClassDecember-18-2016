@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var o = {};
+
+Object.defineProperty(o, 'a', {
+  value: 16,
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+
+var bValue = 38;
+Object.defineProperty(o, 'b', {
+  get: function() { return bValue; },
+  set: function(newValue) { bValue = newValue; },
+  enumerable: true,
+  configurable: true
+});
+o.b;
+
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="prototype"></p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+var myFather = new Person("Ravi", "Patro", 55, "brown");
+var myMother = new Person("Sujata", "Patro", 53, "brown");
+
+document.getElementById("prototype").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age; 
+</script>
+
+</body>
+</html>
