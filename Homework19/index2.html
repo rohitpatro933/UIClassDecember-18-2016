@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="example"></p>
+
+<script>
+var a = 4;
+var b = 5;
+function myFunction() {
+    document.getElementById("example").innerHTML = a + b;
+} 
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:Red;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+
+function mUp(obj) {
+    obj.style.backgroundColor="Green";
+    obj.innerHTML="Thank You";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button id="myBtn">Click</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+1) what is self ? why do we use it?
+The self property returns the current window.The self property is often used in comparisons.
+The Window.self read-only property returns the window itself. It can be used with dot notation on a window object (that is, window.self) or standalone (self). The advantage of the standalone notation is that a similar notation exists for non-window contexts, such as in Web Workers. By using self, you can refer to the global scope in a way that will work not only in a window context, but also in a worker context.
+Syntax
+var w = window.self;
+
+
+2) what are closures?
+A closure is an inner function that has access to the outer function’s variables—scope chain. The closure has three scope chains: it has access to its own scope, it has access to the outer function’s variables, and it has access to the global variables.
+The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters. Note that the inner function cannot call the outer function’s arguments object, however, even though it can call the outer function’s parameters directly.
+You create a closure by adding a function inside another function.
+
+
+3) what is hoisting?
+Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, a variable can be declared after it has been used.
+If a developer doesn't understand hoisting, programs may contain bugs (errors).
+To avoid bugs, always declare all variables at the beginning of every scope.
+JavaScript in strict mode does not allow variables to be used if they are not declared.
+Hoisting works well with other data types and variables as well. The variables can be initialized and used before declared. But they cannot be used without initialization.
+
+
+4) what are the different events in java script or dom?
+HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.An HTML event can be something the browser does, or something a user does.
+JavaScript lets you execute code when events are detected.
+HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document.
+Events are normally used in combination with functions, and the function will not be executed before the event occurs.
+onclick	- The event occurs when the user clicks on an element
+onkeypress - The event occurs when the user presses a key
+onerror - The event occurs when an error occurs while loading an external file
+onload - The event occurs when an object has loaded
+onblur - The event occurs when an element loses focus
+onsubmit - The event occurs when a form is submitted.
+
+
+5) how to attach event listener to an elements?
+The addEventListener() method attaches an event handler to the specified element.
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+You can add many event handlers to one element. The addEventListener() method makes it easier to control how the event reacts to bubbling.
+When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.

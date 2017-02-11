@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    if (window.top!= window.self)  {
+        document.getElementById("example").innerHTML = "This window is not the top most window.";
+    } else { 
+        document.getElementById("example").innerHTML = "This window is the top most window.";
+    } 
+}
+</script>
+</head>
+<body>
+
+<button onclick="myFunction()">Check window</button>
+<p>
+<button onclick="myFunction()">Next window</button>
+</p>
+<p id="example"></p>
+
+</body>
+</html>
