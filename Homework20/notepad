@@ -1,0 +1,39 @@
+1) what is IIFE? why do we need to use?
+IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+In JavaScript, every function, when invoked, creates a new execution context. Because variables and functions defined within a function may only be accessed inside, but not outside, that context, invoking a function provides a very easy way to create privacy.
+The most widely accepted way to tell the parser to expect a function expression is just to wrap it in parens, because in JavaScript, parens can’t contain statements. At this point, when the parser encounters the function keyword, it knows to parse it as a function expression and not a function declaration.
+Such parens typically indicate that the function expression will be immediately invoked, and the variable will contain the result of the function, not the function itself. This can save someone reading your code the trouble of having to scroll down to the bottom of what might be a very long function expression to see if it has been invoked or not.
+when arguments may be passed when functions are invoked by their named identifier, they may also be passed when immediately invoking a function expression. And because any function defined inside another function can access the outer function’s passed-in arguments and variables, an Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.
+
+
+2) what is namespacing in java script? why do we need to use it?
+Namespacing is a technique employed to avoid collisions with other objects or variables in the global namespace. They're also extremely useful for helping organize blocks of functionality in your application into easily manageable groups that can be uniquely identified.
+In JavaScript, namespacing at an enterprise level is critical as it's important to safeguard your code from breaking in the event of another script on the page using the same variable or method names.
+Namespaces can be found in almost any serious JavaScript application. Unless you're working with a code-snippet, it's imperative that you do your best to ensure that you're implementing namespacing correctly as it's not just simple to pick-up, it'll also avoid third party code clobbering your own. The patterns we'll be examining in this section are:
+Single global variables
+Object literal notation
+Nested namespacing
+Immediately-invoked Function Expressions
+Namespace injection
+
+
+3) what is module pattern?
+the Module pattern is used to further emulate the concept of classes in such a way that we're able to include both public/private methods and variables inside a single object, thus shielding particular parts from the global scope. What this results in is a reduction in the likelihood of our function names conflicting with other functions defined in additional scripts on the page.
+It provides a way of wrapping a mix of public and private methods and variables, protecting pieces from leaking into the global scope and accidentally colliding with another developer's interface. With this pattern, only a public API is returned, keeping everything else within the closure private.
+
+
+4) is it a good practice to have too many global variables or functions ? why if yes ? why if no?
+No, it is not good to have many global variables. Source code is easiest to understand when the scope of its individual elements are limited. Global variables can be read or modified by any part of the program, making it difficult to remember or reason about every possible use.
+A global variable can be get or set by any part of the program, and any rules regarding its use can be easily broken or forgotten.
+A program with many global variables often has tight couplings between some of those variables, and couplings between variables and functions.
+
+
+5) what are HTML dom events?
+HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document.
+Events are normally used in combination with functions, and the function will not be executed before the event occurs.
+onclick	- The event occurs when the user clicks on an element
+onkeypress - The event occurs when the user presses a key
+onerror - The event occurs when an error occurs while loading an external file
+onload - The event occurs when an object has loaded
+onblur - The event occurs when an element loses focus
+onsubmit - The event occurs when a form is submitted.
