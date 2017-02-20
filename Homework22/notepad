@@ -1,0 +1,82 @@
+1) DOM properties and methods
+	http://www.w3schools.com/js/js_htmldom.asp
+The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+The W3C DOM standard is separated into 3 different parts:
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+
+HTML DOM Methods
+HTML DOM methods are actions you can perform (on HTML Elements).
+HTML DOM properties are values (of HTML Elements) that you can set or change.
+The HTML DOM can be accessed with JavaScript and with other programming languages.
+In the DOM, all HTML elements are defined as objects.The programming interface is the properties and methods of each object.
+A property is a value that you can get or change the content of an HTML element.
+A method is an action you can perform like add or deleting an HTML element.
+
+	
+2) BOM (Browser object model)
+	http://www.w3schools.com/js/js_window_screen.asp
+Browser Object Model
+The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM.
+The window object is supported by all browsers. It represents the browser's window.
+All global JavaScript objects, functions, and variables automatically become members of the window object.
+Global variables are properties of the window object.Global functions are methods of the window object.
+
+
+3) AJAX in Java Script
+	http://www.w3schools.com/js/js_ajax_intro.asp
+AJAX is used to Update a web page without reloading the page
+Request data from a server - after the page has loaded
+Receive data from a server - after the page has loaded
+Send data to a server - in the background
+AJAX is not a programming language.
+AJAX just uses a combination of:
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)
+AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text. AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+The process how AJAX works is
+-->An event occurs in a web page (the page is loaded, a button is clicked)
+-->An XMLHttpRequest object is created by JavaScript
+-->The XMLHttpRequest object sends a request to a web server
+-->The server processes the request
+-->The server sends a response back to the web page
+-->The response is read by JavaScript
+-->Proper action (like page update) is performed by JavaScript
+
+The XMLHttpRequest Object
+All modern browsers support the XMLHttpRequest object.
+The XMLHttpRequest object is used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+
+4) what is jQuery?
+jQuery is a lightweight, "write less, do more", JavaScript library.The purpose of jQuery is to make it much easier to use JavaScript on your website.
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+The jQuery library contains the following features:
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities
+
+
+5) can jQuery do some work, what javasciprt can not do?
+jQuery is a framework that lets you write JavaScript quicker and easier.
+The developers of jQuery created it to condense common JavaScript tasks into fewer lines of code.
+You can code most common JavaScript actions using jQuery.
+It's easy to install and get the code to understand jQuery.
+
+
+6) what is $ in jQuery?
+The jQuery syntax is tailor made for selecting HTML elements and perform some action on the element(s).
+Basic syntax is: $(selector).action()
+A dollar sign to define jQuery A (selector) to "query (or find)" HTML elements A jQuery action() to be performed on the element(s)
+In jQuery, the $ sign it's just an alias to jQuery(), then an alias to a function.
