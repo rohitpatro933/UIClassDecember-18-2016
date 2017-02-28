@@ -1,0 +1,26 @@
+Explain all selectors by examples: 
+
+basic css selectors : 
+	
+	https://api.jquery.com/category/selectors/basic-css-selectors/
+
+attribute based selectors : 
+	https://api.jquery.com/category/selectors/attribute-selectors/
+
+child filter selectors:
+	https://api.jquery.com/category/selectors/child-filter-selectors/
+
+content-filter-selector : 
+	https://api.jquery.com/category/selectors/content-filter-selector/
+
+form-selectors :
+	https://api.jquery.com/category/selectors/form-selectors/
+
+hierarchy-selectors :
+	https://api.jquery.com/category/selectors/hierarchy-selectors/
+
+jquery-selector-extensions :
+	https://api.jquery.com/category/selectors/jquery-selector-extensions/
+
+visibility-filter-selectors :
+	https://api.jquery.com/category/selectors/visibility-filter-selectors/

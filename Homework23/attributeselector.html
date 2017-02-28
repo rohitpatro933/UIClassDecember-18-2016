@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.red-border {
+				border: 1px solid red;
+			}
+			.black-border {
+				border: 2px solid black;
+			}
+			.yellow-border {
+				border: 2px solid yellow;
+			}
+			.blue-border {
+				border: 2px solid blue;
+			}
+			.lightblue-border {
+				border: 2px solid lightblue;
+			}
+			.green {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		The input with no type attr : <input><br/>
+		The input with type as text : <input type="text"><br/>
+		The input with type as radio : <input type="radio"><br/>
+		The input with type as date : <input type="date"><br/>
+		The input with type as checkbox : <input type="checkbox"><br/>
+		The input with type as number : <input type="number"><br/>
+		The input with type as datetime-local : <input type="datetime-local"><br/>
+		The input with type as week : <input type="week"><br/>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+			jQuery('[type=text]').addClass('red-border')
+			jQuery('[type^=date]').addClass('yellow-border')
+			jQuery('[type$=k]').addClass('blue-border');
+			jQuery('[type*=be').addClass('lightblue-border')
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>This is div 1</div>
+		<div>This is div 2</div>
+		<div>This is div 3</div>
+		<div>This is div 4</div>
+		<div>This is div 5</div>
+		<div>This is div 6</div>
+		<p>This is para 1</p>
+		<p>This is para 2</p>
+		<p>This is para 3</p>
+		<p>This is para 4</p>
+		<p>This is para 5</p>
+		<span>This is span 1</span>
+		<span>This is span 2</span>
+		<span>This is span 3</span>
+		<span>This is span 4</span>
+		<span>This is span 5</span>
+		<span>This is span 6</span>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+			jQuery('div:gt(3)').css('color', 'red')
+			jQuery(':not(p:first)').css('border', '1px solid blue')
+			jQuery('p:even').css('background-color', 'lightgray');
+			jQuery('span:odd').css('background-color', 'lightblue')
+		</script>
+	</body>
+</html>

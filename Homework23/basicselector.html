@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.red-border {
+				border: 2px solid red;
+			}
+			.black-border {
+				border: 2px solid black;
+			}
+			.green {
+				color: green;
+			}
+			.blue {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="class2">This is div 1</div>
+		<div id="divId">This is div 2</div>
+		<div class="class1 class2">This is div 3</div>
+		<div>This is div 4</div>
+		<div class="class1">This is div 5</div>
+		<p class="class1">This is para 1</p>
+		<p>This is para 2</p>
+		<p class="class2">This is para 3</p>
+		<p id="paraId">This is para 4</p>
+		<p>This is para 5</p>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+			jQuery('.class1 , .class2').addClass('red');
+			jQuery('.class1.class2').addClass('black-border');
+			jQuery('#divId').addClass('red-border');
+			jQuery('.class1').addClass('black-border');
+			jQuery('.class2').addClass('blue');
+			jQuery('p').css('font-weight', 'bold');
+		</script>
+	</body>
+</html>
